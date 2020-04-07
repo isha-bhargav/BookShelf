@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main5Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="italic"
+        android:layout_marginRight="40dp"
+        android:textSize="30dp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/txt2"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        />
+    <com.braintreepayments.cardform.view.CardForm
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_form"
+        android:layout_below="@+id/txt1"></com.braintreepayments.cardform.view.CardForm>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:text="buy now"
+        android:layout_below="@+id/card_form"/>
+
+</RelativeLayout>

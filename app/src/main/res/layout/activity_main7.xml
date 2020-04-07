@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main7Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Please enter the delivery address"
+        android:textColor="#D9E70C"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt"
+        android:shadowColor="#E7F707"
+        android:id="@+id/txt1"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:maxLines="4"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/txt1"
+        android:hint="Address"
+        android:id="@+id/ed1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get location"
+        android:layout_below="@+id/ed1"
+        android:layout_alignEnd="@+id/ed1"
+        android:id="@+id/btn0"
+        android:background="#DCEB13"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn0"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay on Delivery"
+            android:layout_margin="30dp"
+            android:background="#C97CB342"
+            android:id="@+id/btn1"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn1"
+            android:id="@+id/btn2"
+            android:text="Debit/Credit card"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#C97CB342"
+            android:layout_marginRight="30dp"
+            /></RadioGroup>
+</RelativeLayout>
